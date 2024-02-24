@@ -1,5 +1,4 @@
 import { SSTConfig } from "sst";
-import { API } from "./stacks/MyStack";
 import { Lambda } from "./stacks/LambdaStack";
 
 export default {
@@ -10,7 +9,6 @@ export default {
     };
   },
   stacks(app) {
-    app.stack(API);
     app.stack(Lambda);
   }
 } satisfies SSTConfig;
